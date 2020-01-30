@@ -186,7 +186,7 @@ extension StatusMenuWindowController {
 extension NSStatusBarButton {
     
     override open func mouseDown(with event: NSEvent) {
-        // allow StatusMenuController to manage the behavour of clicking
+        // allow StatusMenuController to manage the behavior of clicking
         return
     }
 }

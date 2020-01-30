@@ -308,7 +308,7 @@ class AppSessionManagerImplementation: AppSessionManager {
         })
     }
 
-    // MARK: - AppDelegate quit behaviour
+    // MARK: - AppDelegate quit behavior
     
     func replyToApplicationShouldTerminate() {
         guard sessionStatus == .established && !appStateManager.state.isSafeToEnd && !propertiesManager.rememberLoginAfterUpdate else {
