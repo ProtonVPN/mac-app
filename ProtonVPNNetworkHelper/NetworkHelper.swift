@@ -48,7 +48,7 @@ class NetworkHelper: NSObject {
     
     private func validateCodeSigning(connection: NSXPCConnection) -> Bool {
         do {
-            return try CodeSignatureComparitor.codeSignatureMatches(pid: connection.processIdentifier)
+            return try CodeSignatureComparator.codeSignatureMatches(pid: connection.processIdentifier)
         } catch {
             #if DEBUG
             print("Code signing check failed with error: \(error)")

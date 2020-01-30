@@ -34,8 +34,8 @@
 		D5D6A94A230D296400A432D1 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D6A949230D296400A432D1 /* DependencyContainer.swift */; };
 		E10FA80522C21AC100CD03B2 /* Srp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10FA80422C21AC100CD03B2 /* Srp.framework */; };
 		E1144E3E22E8D4770087A685 /* ObfuscatedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1144E3D22E8D4770087A685 /* ObfuscatedConstants.swift */; };
-		E1248885220A18D2005B9A9E /* CodeSignatureComparitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1248884220A18D2005B9A9E /* CodeSignatureComparitor.swift */; };
-		E1248886220A18D2005B9A9E /* CodeSignatureComparitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1248884220A18D2005B9A9E /* CodeSignatureComparitor.swift */; };
+		E1248885220A18D2005B9A9E /* CodeSignatureComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1248884220A18D2005B9A9E /* CodeSignatureComparator.swift */; };
+		E1248886220A18D2005B9A9E /* CodeSignatureComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1248884220A18D2005B9A9E /* CodeSignatureComparator.swift */; };
 		E125DCE0221ADA5300027272 /* CommandLineToolRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125DCDF221ADA5300027272 /* CommandLineToolRunner.swift */; };
 		E125DCE1221ADBE100027272 /* CommandLineToolRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125DCDF221ADA5300027272 /* CommandLineToolRunner.swift */; };
 		E125DCE2221ADBED00027272 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17DE10321FB5043008CCC13 /* NetworkHelper.swift */; };
@@ -409,7 +409,7 @@
 		E10FA80422C21AC100CD03B2 /* Srp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Srp.framework; path = Frameworks/Srp.framework; sourceTree = "<group>"; };
 		E1144E3B22E8D4460087A685 /* ObfuscatedConstants.example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObfuscatedConstants.example.swift; sourceTree = "<group>"; };
 		E1144E3D22E8D4770087A685 /* ObfuscatedConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObfuscatedConstants.swift; sourceTree = "<group>"; };
-		E1248884220A18D2005B9A9E /* CodeSignatureComparitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSignatureComparitor.swift; sourceTree = "<group>"; };
+		E1248884220A18D2005B9A9E /* CodeSignatureComparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSignatureComparator.swift; sourceTree = "<group>"; };
 		E125DCDF221ADA5300027272 /* CommandLineToolRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineToolRunner.swift; sourceTree = "<group>"; };
 		E1261FB8202CA45C005E9880 /* ColoredLoadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredLoadButton.swift; sourceTree = "<group>"; };
 		E12657A120ED01E6004A21C4 /* GreenHighlightButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenHighlightButton.swift; sourceTree = "<group>"; };
@@ -1636,7 +1636,7 @@
 			children = (
 				E1661BA421B92A36005DB438 /* MapCoordinateTranslator.swift */,
 				E13464DB2035BA5C00C0DB7D /* NetworkStatistics.swift */,
-				E1248884220A18D2005B9A9E /* CodeSignatureComparitor.swift */,
+				E1248884220A18D2005B9A9E /* CodeSignatureComparator.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -2291,7 +2291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1248886220A18D2005B9A9E /* CodeSignatureComparitor.swift in Sources */,
+				E1248886220A18D2005B9A9E /* CodeSignatureComparator.swift in Sources */,
 				E17DE11821FEF8F8008CCC13 /* NetworkHelperProtocol.swift in Sources */,
 				E17DE12521FF4426008CCC13 /* NetworkHelperAuthRight.swift in Sources */,
 				E125DCE0221ADA5300027272 /* CommandLineToolRunner.swift in Sources */,
@@ -2354,7 +2354,7 @@
 				EE68DD511F49F4BE00F218B8 /* TabBarView.swift in Sources */,
 				E187022620E3A567000521AC /* StatusMenuSurfaceButton.swift in Sources */,
 				E180D16C2126FCF700F4D1C7 /* TourNextButton.swift in Sources */,
-				E1248885220A18D2005B9A9E /* CodeSignatureComparitor.swift in Sources */,
+				E1248885220A18D2005B9A9E /* CodeSignatureComparator.swift in Sources */,
 				E187022020E268FE000521AC /* StatusMenuProfileItemViewModel.swift in Sources */,
 				EE5CF76E1F4DDB750002BBF3 /* ProfilesMenuController.swift in Sources */,
 				E17C1CE520EA2C6500DCC687 /* StatusMenuCountryItemViewModel.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  CodeSignatureComparitor.swift
+//  CodeSignatureComparator.swift
 //  ProtonVPN - Created on 27.06.19.
 //
 //  Copyright (c) 2019 Proton Technologies AG
@@ -26,7 +26,7 @@ enum CodeSignatureError: Error {
     case message(String)
 }
 
-struct CodeSignatureComparitor {
+struct CodeSignatureComparator {
     
     public static func codeSignatureMatches(pid: pid_t) throws -> Bool {
         return try codeSigningCertificatesForSelf() == codeSigningCertificates(for: pid)
