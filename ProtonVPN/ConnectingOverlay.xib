@@ -86,7 +86,7 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                     <connections>
-                                        <action selector="retryConneting:" target="-2" id="tdk-M2-aqq"/>
+                                        <action selector="retryConnecting:" target="-2" id="tdk-M2-aqq"/>
                                     </connections>
                                 </button>
                             </subviews>
