@@ -60,7 +60,7 @@ import operator
 
 class UsageException (Exception):
     """
-    Raised when the progam detects a usage issue; the top-level code catches this 
+    Raised when the program detects a usage issue; the top-level code catches this 
     and prints a usage message.
     """
     pass
