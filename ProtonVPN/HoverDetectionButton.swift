@@ -24,7 +24,7 @@ import Cocoa
 
 class HoverDetectionButton: NSButton {
     
-    // Adds padding betweet text and button border
+    // Adds padding between text and button border
     @IBInspectable var horizontalPadding: CGFloat = 0
     @IBInspectable var verticalPadding: CGFloat = 0
 
