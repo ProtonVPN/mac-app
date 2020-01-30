@@ -10,7 +10,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="ServerInfoViewController" customModule="ProtonVPN" customModuleProvider="target">
             <connections>
-                <outlet property="bottonConstraint" destination="Yya-Tn-hs2" id="lJK-PE-4gu"/>
+                <outlet property="buttonConstraint" destination="Yya-Tn-hs2" id="lJK-PE-4gu"/>
                 <outlet property="infoView" destination="He7-r1-6JB" id="PZv-cn-FWg"/>
                 <outlet property="ipLabel" destination="cjl-nd-LvJ" id="DPM-Cy-Tcb"/>
                 <outlet property="ipValue" destination="5Yw-BY-KWI" id="OY6-E7-u0L"/>
