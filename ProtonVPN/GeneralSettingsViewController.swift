@@ -43,7 +43,7 @@ class GeneralSettingsViewController: NSViewController {
     
     @IBOutlet weak var startMinimizedLabel: PVPNTextField!
     @IBOutlet weak var startMinimizedButton: SwitchButton!
-    @IBOutlet weak var startMinimizedSeperator: NSBox!
+    @IBOutlet weak var startMinimizedSeparator: NSBox!
     
     @IBOutlet weak var systemNotificationsLabel: PVPNTextField!
     @IBOutlet weak var systemNotificationsButton: SwitchButton!
@@ -108,7 +108,7 @@ class GeneralSettingsViewController: NSViewController {
         startMinimizedButton.buttonView?.tag = SwitchButtonOption.startMinimized.rawValue
         startMinimizedButton.delegate = self
         
-        startMinimizedSeperator.fillColor = .protonLightGrey()
+        startMinimizedSeparator.fillColor = .protonLightGrey()
     }
     
     private func setupSystemNotificationsItem() {

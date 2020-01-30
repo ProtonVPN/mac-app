@@ -103,7 +103,7 @@
                 <outlet property="profileCircle" destination="9mX-C2-xaF" id="9gF-pq-BD8"/>
                 <outlet property="profileImage" destination="pYh-k1-7fM" id="s86-0u-QjO"/>
                 <outlet property="secondaryLabel" destination="NNQ-G8-jHb" id="D5o-YU-31H"/>
-                <outlet property="seperator" destination="2jz-Mh-ZbB" id="d2q-AO-PrU"/>
+                <outlet property="separator" destination="2jz-Mh-ZbB" id="d2q-AO-PrU"/>
             </connections>
             <point key="canvasLocation" x="102.5" y="35"/>
         </customView>

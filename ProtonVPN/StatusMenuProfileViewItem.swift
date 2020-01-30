@@ -28,7 +28,7 @@ class StatusMenuProfileViewItem: NSTableRowView {
     @IBOutlet weak var profileImage: NSImageView!
     @IBOutlet weak var label: NSTextField!
     @IBOutlet weak var secondaryLabel: NSTextField!
-    @IBOutlet weak var seperator: NSBox!
+    @IBOutlet weak var separator: NSBox!
     @IBOutlet weak var button: StatusMenuSurfaceButton!
     
     private var viewModel: StatusMenuProfileItemViewModel?
@@ -38,7 +38,7 @@ class StatusMenuProfileViewItem: NSTableRowView {
         
         setupIcon()
         setupLabels()
-        setupSeperator()
+        setupSeparator()
         setupButton()
         setupAvailability()
     }
@@ -74,8 +74,8 @@ class StatusMenuProfileViewItem: NSTableRowView {
         secondaryLabel.attributedStringValue = viewModel.secondaryDescription
     }
     
-    private func setupSeperator() {
-        seperator.fillColor = .protonGreySeperatorOnWhite()
+    private func setupSeparator() {
+        separator.fillColor = .protonGreySeparatorOnWhite()
     }
     
     private func setupButton() {
@@ -83,7 +83,7 @@ class StatusMenuProfileViewItem: NSTableRowView {
             guard let `self` = self else { return }
             
             if self.button.isHovered, let viewModel = self.viewModel, viewModel.canConnect {
-                self.backgroundColor = .protonGreySeperatorOnWhite()
+                self.backgroundColor = .protonGreySeparatorOnWhite()
             } else {
                 self.backgroundColor = .protonWhite()
             }

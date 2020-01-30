@@ -17,7 +17,7 @@
                 <outlet property="rememberLoginSeparator" destination="Jpt-aV-Oth" id="VHw-2x-YS3"/>
                 <outlet property="startMinimizedButton" destination="028-IW-VNS" id="81m-Hl-U5n"/>
                 <outlet property="startMinimizedLabel" destination="NRQ-fP-BcB" id="hC7-zO-N1G"/>
-                <outlet property="startMinimizedSeperator" destination="Myq-Cy-E2t" id="lth-RT-0v0"/>
+                <outlet property="startMinimizedSeparator" destination="Myq-Cy-E2t" id="lth-RT-0v0"/>
                 <outlet property="startOnBootButton" destination="YCb-qR-3vO" id="x7s-xs-W5T"/>
                 <outlet property="startOnBootLabel" destination="eTP-6s-cjq" id="shE-6C-7tO"/>
                 <outlet property="startOnBootSeparator" destination="13D-5X-qC1" id="jEG-bG-0o8"/>
@@ -131,7 +131,7 @@
                                         <constraint firstAttribute="width" constant="35" id="ODR-FE-iCv"/>
                                     </constraints>
                                 </customView>
-                                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Myq-Cy-E2t" userLabel="Start Minimized Seperator">
+                                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Myq-Cy-E2t" userLabel="Start Minimized Separator">
                                     <rect key="frame" x="42" y="0.0" width="416" height="1"/>
                                     <view key="contentView" id="5Pa-KH-ReK">
                                         <rect key="frame" x="0.0" y="0.0" width="416" height="1"/>
