@@ -820,12 +820,12 @@
 			name = ReportBug;
 			sourceTree = "<group>";
 		};
-		D5D6A948230D294C00A432D1 /* Dependecy injection */ = {
+		D5D6A948230D294C00A432D1 /* Dependency injection */ = {
 			isa = PBXGroup;
 			children = (
 				D5D6A949230D296400A432D1 /* DependencyContainer.swift */,
 			);
-			name = "Dependecy injection";
+			name = "Dependency injection";
 			sourceTree = "<group>";
 		};
 		E13F4CFF20FCD6CF00D985C2 /* Tests */ = {
@@ -1591,7 +1591,7 @@
 		EED534831EEC112000013607 /* ProtonVPN */ = {
 			isa = PBXGroup;
 			children = (
-				D5D6A948230D294C00A432D1 /* Dependecy injection */,
+				D5D6A948230D294C00A432D1 /* Dependency injection */,
 				EE69C8CD1F5D7F9E00C3065C /* Windows */,
 				EECCBA751F070FA1007829E0 /* ProtonVPN.entitlements */,
 				EE36B0C91F4B62D6005DB349 /* Constants */,
