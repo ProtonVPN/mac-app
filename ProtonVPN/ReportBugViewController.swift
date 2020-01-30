@@ -34,7 +34,7 @@ class ReportBugViewController: NSViewController {
     
     @IBOutlet weak var descriptionLabel: PVPNTextField!
     @IBOutlet weak var emailLabel: PVPNTextField!
-    @IBOutlet weak var contryLabel: PVPNTextField!
+    @IBOutlet weak var countryLabel: PVPNTextField!
     @IBOutlet weak var fileSizeLabel: PVPNTextField!
     @IBOutlet weak var ispLabel: PVPNTextField!
     @IBOutlet weak var accountLabel: PVPNTextField!
@@ -137,7 +137,7 @@ class ReportBugViewController: NSViewController {
     private func setupTranslations() {
         descriptionLabel.stringValue = LocalizedString.reportDescription
         emailLabel.stringValue = LocalizedString.reportFieldEmail
-        contryLabel.stringValue = LocalizedString.reportFieldCountry
+        countryLabel.stringValue = LocalizedString.reportFieldCountry
         fileSizeLabel.stringValue = LocalizedString.reportMaxFileSize
         ispLabel.stringValue = LocalizedString.reportFieldISP
         accountLabel.stringValue = LocalizedString.reportFieldAccount

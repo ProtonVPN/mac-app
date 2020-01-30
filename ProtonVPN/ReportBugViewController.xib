@@ -13,7 +13,7 @@
                 <outlet property="attachmentButton" destination="Xx4-jc-gDY" id="S9v-lD-REq"/>
                 <outlet property="cancelButton" destination="qdv-jc-KAZ" id="XcH-dJ-flN"/>
                 <outlet property="contentContainerView" destination="4sn-hB-7GZ" id="DTx-OJ-4DN"/>
-                <outlet property="contryLabel" destination="tMf-Qo-IPb" id="xcs-ZK-TaM"/>
+                <outlet property="countryLabel" destination="tMf-Qo-IPb" id="xcs-ZK-TaM"/>
                 <outlet property="countryField" destination="gY6-va-j76" id="Joo-ht-fn5"/>
                 <outlet property="descriptionLabel" destination="N0D-AE-Yfk" id="FRB-tu-YJz"/>
                 <outlet property="emailField" destination="TGQ-qt-jkO" id="etB-jB-urs"/>
