@@ -56,7 +56,7 @@
                                     <rect key="frame" x="28" y="327" width="344" height="64"/>
                                     <textFieldCell key="cell" alignment="justified" id="1eG-Vq-blT">
                                         <font key="font" usesAppearanceFont="YES"/>
-                                        <string key="title">_Please privide detail information about the problem that you encountered and attach any files that will help us reproduce the issue. Also provide us with a way to contact you for more information.</string>
+                                        <string key="title">_Please provide detail information about the problem that you encountered and attach any files that will help us reproduce the issue. Also provide us with a way to contact you for more information.</string>
                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
