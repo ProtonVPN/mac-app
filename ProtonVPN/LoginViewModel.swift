@@ -75,7 +75,7 @@ class LoginViewModel {
         })
     }
     
-    func logInApperared() {
+    func logInAppeared() {
         guard propertiesManager.rememberLogin || propertiesManager.rememberLoginAfterUpdate else {
             return
         }
