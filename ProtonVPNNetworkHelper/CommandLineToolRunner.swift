@@ -60,12 +60,12 @@ struct CommandLineToolRunner {
             
             // Once the firewall is confirmed to be enabled, check the firewall rules
             // pfctl -sr | grep <address>
-            let grepAdressInputPipe = Pipe()
+            let grepAddressInputPipe = Pipe()
             
             let rulesOutputHandler =  { (file: FileHandle!) -> Void in
                 let data = file.availableData
-                grepAdressInputPipe.fileHandleForWriting.write(data)
-                grepAdressInputPipe.fileHandleForWriting.closeFile()
+                grepAddressInputPipe.fileHandleForWriting.write(data)
+                grepAddressInputPipe.fileHandleForWriting.closeFile()
                 
                 guard let output = NSString(data: data, encoding: String.Encoding.utf8.rawValue), output.length != 0 else { return }
                 loggingOutput.append(output as String)
@@ -82,7 +82,7 @@ struct CommandLineToolRunner {
             let grepAddressProcess = Process()
             grepAddressProcess.launchPath = self.grep
             grepAddressProcess.arguments = [address]
-            grepAddressProcess.standardInput = grepAdressInputPipe
+            grepAddressProcess.standardInput = grepAddressInputPipe
             
             grepAddressProcess.terminationHandler = { task in
                 let terminationStatus = NSNumber(value: task.terminationStatus)
