@@ -29,7 +29,7 @@ class MapHeaderBackground: NSView {
     private let lowerBorderRadius: CGFloat = 75
     private let headerHeight: CGFloat = 55
     
-    private let outterCircleRadius: CGFloat = 20
+    private let outerCircleRadius: CGFloat = 20
     private let innerCircleRadius: CGFloat = 15
     
     let width: CGFloat
@@ -42,7 +42,7 @@ class MapHeaderBackground: NSView {
     }
     
     var path = CGMutablePath()
-    var outter = CGMutablePath()
+    var outer = CGMutablePath()
     var clicked: (() -> Void)?
 
     required init?(coder decoder: NSCoder) {
@@ -51,7 +51,7 @@ class MapHeaderBackground: NSView {
     }
     
     override func hitTest(_ point: NSPoint) -> NSView? {
-        if path.contains(point) || outter.contains(point) {
+        if path.contains(point) || outer.contains(point) {
             return super.hitTest(point)
         } else {
             return nil
@@ -60,7 +60,7 @@ class MapHeaderBackground: NSView {
     
     override func mouseUp(with event: NSEvent) {
         let pointInView = convert(event.locationInWindow, from: nil)
-        if path.contains(pointInView) || outter.contains(pointInView) {
+        if path.contains(pointInView) || outer.contains(pointInView) {
             clicked?()
         }
     }
@@ -110,13 +110,13 @@ class MapHeaderBackground: NSView {
         context.setFillColor(backgroundColor)
         context.drawPath(using: .fill)
         
-        outter = CGMutablePath()
-        var circleOrigin = CGPoint(x: bounds.width / 2 - outterCircleRadius, y: bounds.maxY - headerHeight - outterCircleRadius)
-        var circleBounds = CGSize(width: 2 * outterCircleRadius, height: 2 * outterCircleRadius)
+        outer = CGMutablePath()
+        var circleOrigin = CGPoint(x: bounds.width / 2 - outerCircleRadius, y: bounds.maxY - headerHeight - outerCircleRadius)
+        var circleBounds = CGSize(width: 2 * outerCircleRadius, height: 2 * outerCircleRadius)
         var circleRect = CGRect(origin: circleOrigin, size: circleBounds)
-        outter.addEllipse(in: circleRect)
+        outer.addEllipse(in: circleRect)
         
-        context.addPath(outter)
+        context.addPath(outer)
         context.drawPath(using: .fill)
         
         let inner = CGMutablePath()
