@@ -44,7 +44,7 @@ protocol WindowService: class {
     func openProfilesWindow(viewModel: ProfilesContainerViewModel)
     func openReportBugWindow(viewModel: ReportBugViewModel, alertService: CoreAlertService)
     
-    func bringWindowsToForground() -> Bool
+    func bringWindowsToForeground() -> Bool
     func closeActiveWindows()
     
     func presentKeyModal(viewController: NSViewController)
@@ -183,7 +183,7 @@ class WindowServiceImplementation: WindowService {
         windowController.showWindow(self)
     }
     
-    func bringWindowsToForground() -> Bool {
+    func bringWindowsToForeground() -> Bool {
         guard let mainWindowController = mainWindowController else {
             return false
         }
