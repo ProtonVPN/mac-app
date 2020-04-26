@@ -134,7 +134,7 @@ extension NSColor {
                        alpha: 1.0)
     }
     
-    class func protonGreySeperatorOnWhite() -> NSColor {
+    class func protonGreySeparatorOnWhite() -> NSColor {
         return NSColor(red: 234/255,
                        green: 234/255,
                        blue: 234/255,

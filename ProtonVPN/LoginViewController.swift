@@ -100,7 +100,7 @@ class LoginViewController: NSViewController {
     override func viewDidAppear() {
         super.viewDidAppear()
         
-        viewModel.logInApperared()
+        viewModel.logInAppeared()
         _ = usernameTextField.becomeFirstResponder()
     }
     

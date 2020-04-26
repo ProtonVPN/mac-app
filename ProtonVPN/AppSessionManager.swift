@@ -278,11 +278,11 @@ class AppSessionManagerImplementation: AppSessionManager {
     // MARK: - Refresh
     func scheduleRefreshes(now: Bool) {
         if loginTimer == nil || !loginTimer!.isValid {
-            loginTimer = Timer.scheduledTimer(timeInterval: refreshRate, target: self, selector: #selector(reistablishLogin), userInfo: nil, repeats: true)
+            loginTimer = Timer.scheduledTimer(timeInterval: refreshRate, target: self, selector: #selector(reestablishLogin), userInfo: nil, repeats: true)
         }
         
         if now, lastRefresh.addingTimeInterval(refreshRate) < Date() {
-            reistablishLogin()
+            reestablishLogin()
         }
     }
     
@@ -293,10 +293,10 @@ class AppSessionManagerImplementation: AppSessionManager {
         }
     }
     
-    @objc private func reistablishLogin() {
+    @objc private func reestablishLogin() {
         lastRefresh = Date()
         attemptRememberLogIn(success: {}, failure: { [unowned self] error in
-            PMLog.D("Failed to reistablish vpn credentials: \(error.localizedDescription)", level: .error)
+            PMLog.D("Failed to reestablish vpn credentials: \(error.localizedDescription)", level: .error)
             
             let error = error as NSError
             switch error.code {
@@ -308,7 +308,7 @@ class AppSessionManagerImplementation: AppSessionManager {
         })
     }
 
-    // MARK: - AppDelegate quit behaviour
+    // MARK: - AppDelegate quit behavior
     
     func replyToApplicationShouldTerminate() {
         guard sessionStatus == .established && !appStateManager.state.isSafeToEnd && !propertiesManager.rememberLoginAfterUpdate else {

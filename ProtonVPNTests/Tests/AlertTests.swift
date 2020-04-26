@@ -109,7 +109,7 @@ fileprivate class WindowServiceMock: WindowService {
     func openProfilesWindow(viewModel: ProfilesContainerViewModel) {}
     func openReportBugWindow(viewModel: ReportBugViewModel, alertService: CoreAlertService) {}
     
-    func bringWindowsToForground() -> Bool {
+    func bringWindowsToForeground() -> Bool {
         return false
     }
 

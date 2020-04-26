@@ -216,7 +216,7 @@ extension NavigationService {
     }
     
     private func openRequiredWindow() {
-        if !windowService.bringWindowsToForground() {
+        if !windowService.bringWindowsToForeground() {
             if appSessionManager.sessionStatus == .established, vpnGateway != nil {
                 showSidebar()
             } else {

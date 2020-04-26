@@ -67,7 +67,7 @@ class CountryAnnotationViewModel {
             let connectWidth = attributedConnect.size().width + titlePadding * 2
             let disconnectWidth = attributedDisconnect.size().width + titlePadding * 2
             let widths = [minWidth, countryWidth, connectWidth, disconnectWidth]
-            return 2 * round((widths.max() ?? fallBackWidth) / 2) // prevents bluring on non-retina
+            return 2 * round((widths.max() ?? fallBackWidth) / 2) // prevents blurring on non-retina
         } else {
             return fallBackWidth
         }

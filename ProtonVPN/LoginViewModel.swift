@@ -67,9 +67,9 @@ class LoginViewModel {
         }
         
         logInInProgress?()
-        appSessionManager.attemptRememberLogIn(success: { [silantlyCheckForUpdates] in
+        appSessionManager.attemptRememberLogIn(success: { [silentlyCheckForUpdates] in
             NSApp.setActivationPolicy(.accessory)
-            silantlyCheckForUpdates()
+            silentlyCheckForUpdates()
         }, failure: { [weak self] error in
             guard let `self` = self else { return }
             self.specialErrorCaseNotification(error)
@@ -77,14 +77,14 @@ class LoginViewModel {
         })
     }
     
-    func logInApperared() {
+    func logInAppeared() {
         guard propertiesManager.rememberLogin || propertiesManager.rememberLoginAfterUpdate else {
             return
         }
         
         logInInProgress?()
-        appSessionManager.attemptRememberLogIn(success: { [silantlyCheckForUpdates] in
-            silantlyCheckForUpdates()
+        appSessionManager.attemptRememberLogIn(success: { [silentlyCheckForUpdates] in
+            silentlyCheckForUpdates()
         }, failure: { [weak self] error in
             guard let `self` = self else { return }
             self.specialErrorCaseNotification(error)
@@ -94,8 +94,8 @@ class LoginViewModel {
     
     func logIn(username: String, password: String) {
         logInInProgress?()
-        appSessionManager.logIn(username: username, password: password, success: { [silantlyCheckForUpdates] in
-            silantlyCheckForUpdates()
+        appSessionManager.logIn(username: username, password: password, success: { [silentlyCheckForUpdates] in
+            silentlyCheckForUpdates()
         }, failure: { [weak self] error in
             guard let `self` = self else { return }
             self.specialErrorCaseNotification(error)
@@ -117,7 +117,7 @@ class LoginViewModel {
         }
     }
     
-    private func silantlyCheckForUpdates() {
+    private func silentlyCheckForUpdates() {
         UpdateManager.shared.checkForUpdates(appSessionManager, firewallManager: firewallManager, silently: true)
     }
     

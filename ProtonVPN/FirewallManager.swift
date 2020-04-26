@@ -54,7 +54,7 @@ class FirewallManager {
     private var lastConnectedInterfaces: [String]?
     private var lastVpnServerIp: String?
     
-    private var killSwitchBlockingShownSinceLatestSuccessfullConnection = false
+    private var killSwitchBlockingShownSinceLatestSuccessfulConnection = false
     
     private var inactiveFirewallTimer: Timer?
     
@@ -193,12 +193,12 @@ class FirewallManager {
         case .connecting(let serverDescriptor):
             attemptEnablingFirewallWhileConnecting(ipAddress: serverDescriptor.address)
         case .connected(let serverDescriptor):
-            killSwitchBlockingShownSinceLatestSuccessfullConnection = false
+            killSwitchBlockingShownSinceLatestSuccessfulConnection = false
             enableFirewall(ipAddress: serverDescriptor.address)
         case .disconnected:
             if propertiesManager.intentionallyDisconnected {
                 disableFirewall()
-            } else if !killSwitchBlockingShownSinceLatestSuccessfullConnection {
+            } else if !killSwitchBlockingShownSinceLatestSuccessfulConnection {
                 notifyOfActiveFirewall()
             }
         case .aborted(userInitiated: _):
@@ -462,7 +462,7 @@ class FirewallManager {
             guard let `self` = self else { return }
             
             if enabled && self.appStateManager.state.isSafeToEnd { // prevents quick changes between disconnected and connecting from flashing the popup
-                self.killSwitchBlockingShownSinceLatestSuccessfullConnection = true
+                self.killSwitchBlockingShownSinceLatestSuccessfulConnection = true
                 self.alertService.push(alert: self.killSwitchBlockingAlert)
             }
         }

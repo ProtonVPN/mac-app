@@ -100,7 +100,7 @@ class ConnectingViewController: NSViewController, OverlayViewModelDelegate {
         viewModel.cancelConnecting()
     }
     
-    @IBAction private func retryConneting(_ sender: Any) {
+    @IBAction private func retryConnecting(_ sender: Any) {
         viewModel.retryConnection()
     }
     

@@ -26,7 +26,7 @@ class ServerInfoViewController: NSViewController {
     
     @IBOutlet weak var transparentOverlay: CustomOverlayView!
     @IBOutlet weak var infoView: ServerInfoView!
-    @IBOutlet weak var bottonConstraint: NSLayoutConstraint!
+    @IBOutlet weak var buttonConstraint: NSLayoutConstraint!
     @IBOutlet weak var name: NSTextField!
     @IBOutlet weak var loadLabel: NSTextField!
     @IBOutlet weak var ipLabel: NSTextField!
@@ -62,7 +62,7 @@ class ServerInfoViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let infoYPosition = infoYPosition {
-            bottonConstraint.constant = infoYPosition
+            buttonConstraint.constant = infoYPosition
         }
         
         transparentOverlay.clicked = { [weak self] in
